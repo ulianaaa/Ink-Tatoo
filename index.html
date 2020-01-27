@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css"/>
+    <!--<link href="libs/fontawesome-free-5.10.2-web/css/all.css" rel="stylesheet">-->
+    <!-- jquery-modal -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css"/>
+
+    <!--slick-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!--<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />-->
+
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Ink Tatoo</title>
+</head>
+<body>
+<section class="header" id="home">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="navigation-menu hide-item">
+                <nav>
+                    <div class="menu menu-first">
+                        <a href="#home" class="navigation-item">home</a>
+                        <a href="#about" class="navigation-item">about</a>
+                        <a href="#gallery" class="navigation-item">gallery</a>
+                    </div>
+                    <div class="logo">
+                        <img src="dist/img/Logo.png" alt="Ink Tattoo logo">
+                    </div>
+                    <div class="menu menu-second">
+                        <a href="#" class="navigation-item">faq</a>
+                        <a href="#find" class="navigation-item">find us</a>
+                        <a href="#contact" class="navigation-item">contact</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--<div class="row justify-content-center">-->
+            <!--<button class="scroll-icon">-->
+                <!--<div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>-->
+            <!--</button>-->
+        <!--</div>-->
+    </div>
+</section>
+
+<!--about-->
+
+<section class="about" id="about">
+    <div class="about_top ">
+        <div class="about_content about_left  ">
+            <div class="about_head">
+                <h2>About us</h2>
+            </div>
+        </div>
+        <div class="about_content about_right ">
+            <div class="about_right-block">
+                <div class="about_icon">
+                    <img src="dist/img/about_item.png" alt="">
+                </div>
+                <p class="about_text">
+                    Aliquam ac justo interdum, elementum ligula et, condimentum orci.<br>Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies quis erat
+                    sit amet, elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero.<br>
+                    Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut felis
+                    vehicula aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi
+                    nulla et risus.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="about_bottom ">
+        <div class="first_row">
+            <div class="content">
+                <div class="content-overlay">
+                    <div class="content-details fadeIn-bottom">
+                        <div class="link_top">
+                            <div class="link link_link"><i class="fas fa-search"></i></div>
+                        </div>
+                        <div class="link_bottom ">
+                            <div class="link link_link"><i class="fas fa-link"></i></div>
+                            <div class="link link_circle"><i class="fas fa-info-circle"></i></div>
+                            <div class="link link_link"><i class="fas fa-heart"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <img class="content-image about_photo photo1" src="dist/img/about1.png" alt="">
+
+            </div>
+            <div class="content">
+                <div class="content-overlay"></div>
+                <img class="content-image about_photo photo2" src="dist/img/about2.png" alt="">
+                <div class="content-details fadeIn-bottom">
+                    <div class="link_top">
+                        <div class="link link_link"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="link_bottom ">
+                        <div class="link link_link"><i class="fas fa-link"></i></div>
+                        <div class="link link_circle"><i class="fas fa-info-circle"></i></div>
+                        <div class="link link_link"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-overlay"></div>
+                <img class="content-image about_photo photo3" src="dist/img/about3.png" alt="">
+                <div class="content-details fadeIn-bottom">
+                    <div class="link_top">
+                        <div class="link link_link"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="link_bottom ">
+                        <div class="link link_link"><i class="fas fa-link"></i></div>
+                        <div class="link link_circle"><i class="fas fa-info-circle"></i></div>
+                        <div class="link link_link"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-overlay"></div>
+                <img class="content-image about_photo photo3" src="dist/img/about4.png" alt="">
+                <div class="content-details fadeIn-bottom">
+                    <div class="link_top">
+                        <div class="link link_link"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="link_bottom ">
+                        <div class="link link_link"><i class="fas fa-link"></i></div>
+                        <div class="link link_circle"><i class="fas fa-info-circle"></i></div>
+                        <div class="link link_link"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-overlay"></div>
+                <img class="content-image about_photo photo3" src="dist/img/about5.png" alt="">
+                <div class="content-details fadeIn-bottom">
+                    <div class="link_top">
+                        <div class="link link_link"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="link_bottom ">
+                        <div class="link link_link"><i class="fas fa-link"></i></div>
+                        <div class="link link_circle"><i class="fas fa-info-circle"></i></div>
+                        <div class="link link_link"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-overlay"></div>
+                <img class="content-image about_photo photo6" src="dist/img/about6.png" alt="">
+                <div class="content-details fadeIn-bottom">
+                    <div class="link_top">
+                        <div class="link link_link"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="link_bottom ">
+                        <div class="link link_link"><i class="fas fa-link"></i></div>
+                        <div class="link link_circle"><i class="fas fa-info-circle"></i></div>
+                        <div class="link link_link"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second_row">
+            <div class="content">
+                <div class="content-overlay"></div>
+                <img class="content-image about_photo photo2" src="dist/img/about7.png" alt="">
+                <div class="content-details fadeIn-bottom">
+                    <div class="link_top">
+                        <div class="link link_link"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="link_bottom ">
+                        <div class="link link_link"><i class="fas fa-link"></i></div>
+                        <div class="link link_circle"><i class="fas fa-info-circle"></i></div>
+                        <div class="link link_link"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-overlay"></div>
+                <img class="content-image about_photo photo2" src="dist/img/about8.png" alt="">
+                <div class="content-details fadeIn-bottom">
+                    <div class="link_top">
+                        <div class="link link_link"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="link_bottom ">
+                        <div class="link link_link"><i class="fas fa-link"></i></div>
+                        <div class="link link_circle"><i class="fas fa-info-circle"></i></div>
+                        <div class="link link_link"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-overlay"></div>
+                <img class="content-image about_photo photo2" src="dist/img/about9.png" alt="">
+                <div class="content-details fadeIn-bottom">
+                    <div class="link_top">
+                        <div class="link link_link"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="link_bottom ">
+                        <div class="link link_link"><i class="fas fa-link"></i></div>
+                        <div class="link link_circle"><i class="fas fa-info-circle"></i></div>
+                        <div class="link link_link"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-overlay"></div>
+                <img class="content-image about_photo photo2" src="dist/img/about10.png" alt="">
+                <div class="content-details fadeIn-bottom">
+                    <div class="link_top">
+                        <div class="link link_link"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="link_bottom ">
+                        <div class="link link_link"><i class="fas fa-link"></i></div>
+                        <div class="link link_circle"><i class="fas fa-info-circle"></i></div>
+                        <div class="link link_link"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-overlay"></div>
+                <img class="content-image about_photo photo2" src="dist/img/about11.png" alt="">
+                <div class="content-details fadeIn-bottom">
+                    <div class="link_top">
+                        <div class="link link_link"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="link_bottom ">
+                        <div class="link link_link"><i class="fas fa-link"></i></div>
+                        <div class="link link_circle"><i class="fas fa-info-circle"></i></div>
+                        <div class="link link_link"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-overlay"></div>
+                <img class="content-image about_photo photo2" src="dist/img/about12.png" alt="">
+                <div class="content-details fadeIn-bottom">
+                    <div class="link_top">
+                        <div class="link link_link"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="link_bottom ">
+                        <div class="link link_link"><i class="fas fa-link"></i></div>
+                        <div class="link link_circle"><i class="fas fa-info-circle"></i></div>
+                        <div class="link link_link"><i class="fas fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="about_photo photo1"></div>-->
+        <!--<div class="about_photo photo2"></div>-->
+        <!--<div class="about_photo photo3"></div>-->
+        <!--<div class="about_photo photo4"></div>-->
+        <!--<div class="about_photo photo5"></div>-->
+        <!--<div class="about_photo photo6"></div>-->
+        <!--<div class="about_photo photo7"></div>-->
+        <!--<div class="about_photo photo8"></div>-->
+        <!--<div class="about_photo photo9"></div>-->
+        <!--<div class="about_photo photo10"></div>-->
+        <!--<div class="about_photo photo11"></div>-->
+        <!--<div class="about_photo photo12"></div>-->
+
+    </div>
+
+</section>
+
+
+<!--teatimonial-->
+
+<section class="testimonial">
+    <div class="slider">
+        <div class="testimonial_content slide1">
+
+            <div class="testimonial__text">
+                <!--<div class="quote quote-left"><i class="fas fa-quote-left"></i></div>-->
+                <div class="left-quotation-mark"><img src="dist/img/left_quote.png" alt="open quotation mark"></div>
+
+                <div class="testimonial_quote">Aliquam ac justo interdum, elementum ligula et, condimentum orci. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+                <div class="right-quotation-mark"><img src="dist/img/back.png" alt="close quotation mark"></div>
+
+                <!--<div class="quote quote-right"><i class="fas fa-quote-right"></i></div>-->
+            </div>
+
+            <div class="testimonial_author">
+                <p class="testimonial_author-text">- john doe -</p>
+            </div>
+        </div>
+
+        <div class="testimonial_content slide2">
+            <div class="testimonial__text   ">
+                <!--<div class="quote quote-left"><i class="fas fa-quote-left"></i></div>-->
+                <div class="left-quotation-mark"><img src="dist/img/left_quote.png" alt="open quotation mark"></div>
+                <div class="testimonial_quote">Donec nec nulla ac magna lacinia mattis.Donec eget quam tellus. Nulla
+                    facilisi.
+                </div>
+                <div class="right-quotation-mark"><img src="dist/img/back.png" alt="close quotation mark"></div>
+                <!--<div class="quote quote-right"><i class="fas fa-quote-right"></i></div>-->
+            </div>
+
+            <div class="testimonial_author">
+                <div class="testimonial_author-text">- Lorem Ipsum -</div>
+            </div>
+        </div>
+
+        <div class="testimonial_content slide3">
+            <div class="testimonial__text   ">
+                <!--<div class="quote quote-left"><i class="fas fa-quote-left"></i></div>-->
+                <div class="left-quotation-mark"><img src="dist/img/left_quote.png" alt="open quotation mark"></div>
+                <div class="testimonial_quote">Aliquam ac justo interdum, elementum ligula et, condimentum orci. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+                <div class="right-quotation-mark"><img src="dist/img/back.png" alt="close quotation mark"></div>
+                <!--<div class="quote quote-right"><i class="fas fa-quote-right"></i></div>-->
+            </div>
+
+            <div class="testimonial_author">
+                <div class="testimonial_author-text">- john doe -</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--team-->
+
+
+<section class="team">
+    <div class="team-item team-item-1 hide-item">
+        <div class="team-head">
+            <h2>team</h2>
+        </div>
+    </div>
+    <div class="team-item team-item-2 hide-item"></div>
+    <div class="team-item team-item-3 hide-item">
+        <div class="pointer"></div>
+        <div class="about-team">
+            <h2>corey miller</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde accusamus rerum porro, quod reprehenderit
+                temporibus, minima aspernatur totam deleniti recusandae soluta provident, molestias saepe, dolorum error
+                qui blanditiis optio? Iure. Maxime eius, dolores natus minima iste! Ad deserunt quasi, magnam fuga
+                suscipit nulla illo aut, iure veniam ullam culpa quaerat fugit necessitatibus!</p>
+            <div class="social">
+                <div class="social-item"><i class="fab fa-facebook-f"></i></div>
+                <div class="social-item"><i class="fab fa-twitter"></i></div>
+                <div class="social-item"><i class="fab fa-tumblr"></i></div>
+                <div class="social-item"><i class="fab fa-linkedin-in"></i></div>
+                <div class="social-item"><i class="fab fa-instagram"></i></div>
+                <div class="social-item"><i class="fab fa-google-plus-g"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="team-item team-item-4 hide-item"></div>
+    <div class="team-item team-item-5 hide-item">
+        <div class="pointer"></div>
+        <div class="about-team">
+            <h2>Kat Von D</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde accusamus rerum porro, quod reprehenderit
+                temporibus, minima aspernatur totam deleniti recusandae soluta provident, molestias saepe, dolorum error
+                qui blanditiis optio? Iure. Maxime eius, dolores natus minima iste! Ad deserunt quasi, magnam fuga
+                suscipit nulla illo aut, iure veniam ullam culpa quaerat fugit necessitatibus!</p>
+            <div class="social">
+                <div class="social-item"><i class="fab fa-facebook-f"></i></div>
+                <div class="social-item"><i class="fab fa-twitter"></i></div>
+                <div class="social-item"><i class="fab fa-tumblr"></i></div>
+                <div class="social-item"><i class="fab fa-linkedin-in"></i></div>
+                <div class="social-item"><i class="fab fa-instagram"></i></div>
+                <div class="social-item"><i class="fab fa-google-plus-g"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="team-item team-item-6 hide-item">
+        <div class="subscribe">
+            <div class="subscribe-text">
+                <p class="p-first">Newsletter</p>
+                <p class="p-second">Join thousands of other</p>
+                <p class="p-second">people subscribe to our news</p>
+            </div>
+            <form action="#" name="subscribe">
+                <input type="email"  name="email" placeholder="insert email"><br>
+                <!--<input type="button" value="Submit">-->
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>-->
+                <a href="#" id="submit" class=" button btn btn-success success">Submit</a>
+            </form>
+        </div>
+    </div>
+</section>
+<!--twitter-->
+
+<section class="twitter ">
+    <div class="twitter-content">
+        <p class="twitter-icon"><i class="fab fa-twitter"></i></p>
+        <p class="twitter-content">
+            RT @collis: Trade growth ideas with other founders. Look for ways to cross promote.<br> Small startups today may be big friends later. (9/10)  2 days ago
+        </p>
+    </div>
+</section>
+
+
+<section class="gallery" id="gallery">
+    <div class="gallery-head hide-item">
+        <div class="gallery-head-content">
+            <h2>gallery</h2>
+        </div>
+    </div>
+    <div class="gallery-item gallery-item-1 hide-item"></div>
+    <div class="gallery-item gallery-item-2 hide-item"></div>
+    <div class="gallery-item gallery-item-3 hide-item"></div>
+    <div class="gallery-item gallery-item-4 hide-item"></div>
+    <div class="gallery-item gallery-item-5 hide-item"></div>
+    <div class="gallery-item gallery-item-6 hide-item"></div>
+    <div class="gallery-item gallery-item-7 hide-item"></div>
+    <div class="gallery-item gallery-item-8 hide-item"></div>
+    <div class="gallery-item gallery-item-9 hide-item"></div>
+    <div class="gallery-item gallery-item-10 hide-item"></div>
+    <div class="gallery-item gallery-item-11 hide-item"></div>
+    <div class="gallery-item gallery-item-12 hide-item"></div>
+    <div class="gallery-item gallery-item-13 hide-item"></div>
+    <div class="gallery-item gallery-item-14 hide-item"></div>
+    <div class="gallery-item gallery-item-15 hide-item"></div>
+    <div class="gallery-item gallery-item-16 hide-item"></div>
+    <div class="gallery-item gallery-item-17 hide-item"></div>
+    <div class="gallery-item gallery-item-18 hide-item"></div>
+</section>
+
+
+<section class="contact" id="contact">
+    <div class="contact-us">
+        <div class="contact-head">
+            <h2>contact us</h2>
+        </div>
+        <div class="contact-text">
+            <p>
+                Aliquam ac justo interdum, elementum ligula et, condimentum orci.<br> Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+            </p>
+        </div>
+        <div class="contact-info">
+            <p><span class="uppercase bold">INFO :</span></p><br>
+            <p><span class="uppercase">Phone :</span><span class="bold"> + 123-456-789-456</span></p>
+            <p><span class="uppercase">Fax :</span><span class="bold"> + 123-456-789-456</span></p>
+            <p><span class="uppercase">Email :</span><span class="bold"> info@inktattoo.net</span></p>
+            <p><span class="uppercase">Adress</span><span class="bold"> : 1234 Street Road, City Name</span></p>
+        </div>
+        <div class="contact-hours">
+            <p><span class="uppercase bold">WORK HOURS :</span></p><br>
+            <p><span class="uppercase">Monday - Friday :</span><span class="bold"> 09am - 18pm</span></p>
+            <p><span class="uppercase">Saturday :</span><span class="bold"> 09am - 1pm</span></p>
+            <p><span class="uppercase">Sunday :</span><span class="bold"> closed</span></p>
+        </div>
+        <div class="social contact-social">
+            <div class="social-item"><i class="fab fa-facebook-f"></i></div>
+            <div class="social-item"><i class="fab fa-twitter"></i></div>
+            <div class="social-item"><i class="fab fa-tumblr"></i></div>
+            <div class="social-item"><i class="fab fa-linkedin-in"></i></div>
+            <div class="social-item"><i class="fab fa-instagram"></i></div>
+            <div class="social-item"><i class="fab fa-google-plus-g"></i></div>
+        </div>
+    </div>
+    <div class="email-message ">
+        <form action="#" name="subscribe-message">
+            <input type="text" name="full_name" placeholder="FULL NAME"><br>
+            <input type="email" name="email" placeholder="EMAIL"><br>
+            <input type="text" name="message" placeholder="MESSAGE" class="big"><br>
+            <input type="button" onclick="" value="MESSAGE">
+        </form>
+    </div>
+</section>
+
+<!--find-->
+
+<section class="find" id="find">
+    <div class="container">
+        <div class="mapid" id="map"></div>
+    </div>
+</section>
+
+<!--footer-->
+<footer class="hide-item">
+    <nav>
+        <div class="menu menu-first">
+            <a href="#home" class="navigation-item">home</a>
+            <a href="#about" class="navigation-item">about</a>
+            <a href="#gallery" class="navigation-item">gallery</a>
+        </div>
+        <div class="logo">
+            <img src="dist/img/Logo.png" alt="Ink Tattoo logo">
+
+        </div>
+        <div class="menu menu-second">
+            <a href="#faq" class="navigation-item">faq</a>
+            <a href="#find" class="navigation-item">find us</a>
+            <a href="#contact" class="navigation-item">contact</a>
+        </div>
+    </nav>
+    <p>&copy; 2014 InkTattoo. All rights reserved - Designed by theuncreativelab.com</p>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+<!--<script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=pk.eyJ1IjoidWxpYW5hYmIyMiIsImEiOiJjazNvcG94eDQxZ3V3M2JubTAzOW5ycTBkIn0.oUhJkzYNQlfz23Kka4ppVQ"></script>-->
+<!--<script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-routing.js?key=pk.eyJ1IjoidWxpYW5hYmIyMiIsImEiOiJjazNvcG94eDQxZ3V3M2JubTAzOW5ycTBkIn0.oUhJkzYNQlfz23Kka4ppVQ"></script>-->
+<!--<script src="src/js/vendor/modernizr-3.8.0.min.js"></script>-->
+<!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+<!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+<!--slick-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+
+<!--<script src="src/js/plugins.js"></script>-->
+<script src="src/js/main.js"></script>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+</body>
+</html>
+
+<!--<div class="overlay">-->
+<!--<a class="icon">-->
+<!--<i class="fas fa-search"></i>-->
+<!--<i class="fas fa-link"></i>-->
+<!--<i class="fas fa-info-circle"></i>-->
+<!--<i class="fas fa-heart"></i>-->
+<!--</a>-->
+<!--</div>-->
